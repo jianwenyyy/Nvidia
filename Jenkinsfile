@@ -1,32 +1,15 @@
 pipeline {
 
-  agent any
-
+  
+  agent {label "cpu"}
+ 
   options {
 
     buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')
 
   }
 
-  stages {
-
-    stage('Hello') {
-
-      steps {
-
-        sh '''
-        printenv
-        echo "hello"
-        '''
-
-      }
-
-    }
-
-  }
-  
-  agent {label "cpu"}
-    
+   
     stages {
         stage('Set up Env') {
             steps {
