@@ -8,6 +8,9 @@ pipeline {
 
   }
 
+  environment {
+  }
+
   stages {
 
     stage('Hello') {
