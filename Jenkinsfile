@@ -19,6 +19,7 @@ pipeline {
           java -version
           nvcc --version
          asdasdasdasd
+asdasdasad
           echo "jenkins try success!!!!"
 
         '''
