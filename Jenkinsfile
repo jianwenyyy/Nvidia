@@ -8,9 +8,6 @@ pipeline {
 
   }
 
-  environment {
-  }
-
   stages {
 
     stage('Hello') {
@@ -18,12 +15,8 @@ pipeline {
       steps {
 
         sh '''
-
-          printenv
-         asdasdasdasd
-asdasdasad
-          echo "jenkins try success!!!!"
-
+        printenv
+        echo "jenkins try success!!!!"
         '''
 
       }
